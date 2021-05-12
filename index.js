@@ -11,7 +11,9 @@ app.use(formidable());
 app.use(cors());
 
 const characterRoutes = require("./routes/character");
+const comicsRoutes = require("./routes/comics");
 app.use(characterRoutes);
+app.use(comicsRoutes);
 
 app.get("/", (req, res) => {
   res
