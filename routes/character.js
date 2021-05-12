@@ -15,5 +15,17 @@ router.get("/characters", async (req, res) => {
   }
 });
 
+// Route to get a specific character with its ID
+router.get("/character/:characterId", async (req, res) => {
+  try {
+    const response = await axios.get(
+      `https://lereacteur-marvel-api.herokuapp.com/character/${req.params.characterId}?apiKey=${process.env.MARVEL_API_KEY}`
+    );
+    res.status(200).json(response.data);
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+});
+
 // Export the routes
 module.exports = router;
