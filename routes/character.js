@@ -6,9 +6,17 @@ const router = express.Router();
 // Route to get all characters
 router.get("/characters", async (req, res) => {
   try {
-    response = await axios.get(
-      `https://lereacteur-marvel-api.herokuapp.com/characters?apiKey=${process.env.MARVEL_API_KEY}`
-    );
+    let response;
+    if (req.query.name) {
+      response = await axios.get(
+        `https://lereacteur-marvel-api.herokuapp.com/characters?apiKey=${process.env.MARVEL_API_KEY}&skip=${req.query.skip}&name=${req.query.name}`
+      );
+    } else {
+      response = await axios.get(
+        `https://lereacteur-marvel-api.herokuapp.com/characters?apiKey=${process.env.MARVEL_API_KEY}&skip=${req.query.skip}`
+      );
+    }
+
     res.status(200).json(response.data);
   } catch (error) {
     res.status(400).json({ error: error.message });
