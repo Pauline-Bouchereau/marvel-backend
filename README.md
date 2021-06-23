@@ -7,7 +7,7 @@
 👉 Netlify Link to see the live version [HERE](https://marvel-pb.netlify.app/)  
 👉 Repo for the Frontend of this project [HERE](https://github.com/Pauline-Bouchereau/marvel-frontend)
 
-![Homepage of the website](../asset/homepage.png)
+![Homepage of the website](./asset/homepage.png)
 
 _Made in 2021 @ Le Reacteur_
 
