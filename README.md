@@ -7,13 +7,13 @@
 👉 Netlify Link to see the live version [HERE](https://marvel-pb.netlify.app/)  
 👉 Repo for the Frontend of this project [HERE](https://github.com/Pauline-Bouchereau/marvel-frontend)
 
-
+![Homepage of the website](../asset/homepage.png)
 
 _Made in 2021 @ Le Reacteur_
 
 ### ⚙️ Main functionalities :
 
-Login/Sign Up || Add a comic or character to favorites || Visualize favourites saved in database || Search bar to look for a character or comic || Get information from an API  
+Login/Sign Up || Add a comic or character to favorites || Visualize favourites saved in database || Search bar to look for a character or comic || Get information from an API
 
 ### 🔧 Stack
 
@@ -22,12 +22,12 @@ Login/Sign Up || Add a comic or character to favorites || Visualize favourites s
 
 ### 🪛 Packages
 
-✔️ Axios   
+✔️ Axios  
 ✔️ Express  
 ✔️ Express Formidable  
 ✔️ Mongoose  
-✔️ Cloudinary   
-✔️ Cors    
+✔️ Cloudinary  
+✔️ Cors  
 ✔️ Crypto-js  
 ✔️ Uid-2  
 ✔️ Dotenv
